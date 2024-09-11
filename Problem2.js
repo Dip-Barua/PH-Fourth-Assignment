@@ -6,7 +6,7 @@ function sendNotification(email) {
  
     let [username, domainname] = email.split('@');
     
-    let notificationMessage = `${username} sent you an email from ${domainname}`;
+    let notificationMessage = username + " sent you an email from " + domainname;
     
     return notificationMessage;
 }
