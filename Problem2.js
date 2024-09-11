@@ -1,4 +1,5 @@
 function sendNotification(email) {
+    
     if (email.indexOf('@') === -1 || email.split('@').length !== 2) {
         return "Invalid Email";
     }
