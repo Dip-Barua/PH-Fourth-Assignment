@@ -1,10 +1,10 @@
-function checkDigitsInName(input) {
-    if (typeof input !== 'string') {
+function checkDigitsInName(name) {
+    if (typeof name !== 'string') {
         return "Invalid Input";
     }
     
-    for (let i = 0; i < input.length; i++) {
-        let char = input[i];
+    for (let i = 0; i < name.length; i++) {
+        let char = name[i];
         
         if (!isNaN(char) && char !== ' ') {
             return true;

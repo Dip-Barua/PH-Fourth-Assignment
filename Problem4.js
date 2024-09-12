@@ -1,9 +1,9 @@
-function calculateFinalScore(input) {
+function calculateFinalScore(obj) {
 
-    const { name, testScore, schoolGrade, isFFamily } = input;
+    const { name, testScore, schoolGrade, isFFamily } = obj;
 
-    if (typeof input !== 'object' ||
-        input === null ||
+    if (typeof obj !== 'object' ||
+        obj === null ||
         typeof name !== 'string' || 
         typeof testScore !== 'number' || testScore > 50 ||
         typeof schoolGrade !== 'number' || schoolGrade > 30 ||
