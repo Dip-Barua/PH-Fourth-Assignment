@@ -1,17 +1,17 @@
-function waitingTime(interviewTimes, serialNumber) {
-    if (!Array.isArray(interviewTimes) || typeof serialNumber !== 'number') {
+function waitingTime(waitingTimes, serialNumber) {
+    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number') {
 
       return "Invalid Input";
     }
   
 
-    const totalTime = interviewTimes.reduce((sum, time) => sum + time);
+    const totalTime = waitingTimes.reduce((sum, time) => sum + time);
 
 
-    const averageTime = Math.round(totalTime / interviewTimes.length);
+    const averageTime = Math.round(totalTime / waitingTimes.length);
   
 
-    const remainingPeople = serialNumber - interviewTimes.length - 1;
+    const remainingPeople = serialNumber - waitingTimes.length - 1;
   
  
   
